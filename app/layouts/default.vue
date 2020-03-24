@@ -1,5 +1,7 @@
 <template>
   <div class="layout layout-default">
+    <HeaderDefault />
+
     <main class="content">
       <nuxt />
     </main>
@@ -11,6 +13,9 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'LayoutDefault',
+  components: {
+    HeaderDefault: () => import('@/components/templates/headers/HeaderDefault.vue'),
+  },
 })
 </script>
 
@@ -18,7 +23,7 @@ export default Vue.extend({
   .layout-default {
     position: relative;
     min-height: 100vh;
-    padding: 80px 0;
+    padding-top: 64px;
 
     > .header {
       position: fixed;
