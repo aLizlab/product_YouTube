@@ -1,25 +1,26 @@
 # Nuxt Template
 
-[![Actions Status](https://github.com/aLizlab/product_nuxt-template/workflows/PUSH_CI/badge.svg)](https://github.com/aLizlab/product_nuxt-template/actions)
+[![Actions Status](https://github.com/aLizlab/product_nuxt-template/workflows/PUSH_CI/badge.svg)](https://github.com/aLizlab/product_YouTube/actions)
 
-> このリポジトリは、aLizの **Nuxt Template** です。
+> このリポジトリは、aLiz STUDIOの **Nuxt** 教材です。
 
 
 ## Introduction
 
-初心者から中級者の学習のためのNuxtのテンプレートです。
-実務でも使用は可能ですが、必要に応じてα版パッケージを取り込んでいるため十分に動かないことがあります。
+初心者がNuxtを勉強するのをサポートするためリポジトリです。
 
-基本的な使い方としては、設定ファイルは操作せずに _app_ フォルダー内で開発をしていくことをお勧めします。
-設定ファイルを操作するのは、上級者以上または勉強のためのみをお勧めします。
+Vue.jsの公式ガイドを元に、さらにシンプルにして簡単に理解できるドキュメントを作成していきます。
+また、その解説動画は [aLiz STUDIO](https://www.youtube.com/channel/UCVdvrSVX8JVFLsV-CQYzhHw?view_as=subscriber) にて公開をしていく予定です！
 
-改善点や要望などは、ぜひ **Issue** を作ってください。
-なるはやで対応します！
+少しレベルが高い実装方法をする場面もありますが、最初は真似をして書くだけで大丈夫です！
+慣れてきたら、どういう意味なんだろうとかを調べてみてください。
 
 
-## Supported
+## Themes
 
-> 簡単に使える機能
+> 扱う予定のテーマ（要望はIssueにあげてください！）
+
+### Nuxt
 
 - Nuxt
 - Firebase
@@ -27,9 +28,15 @@
 - Jest
 - Dayjs
 - Axios
-- GitHub Actions
-- GitHub Issue Templates
-- GitHub PR Templates
+
+
+### API
+
+- YouTube API
+- Slack API
+- Stripe API
+- Contentful API
+- Trello API
 
 
 ## Commands
@@ -74,20 +81,6 @@ $ npm run build:storybook
 ## check file error
 $ npm run test
 ```
-
-
-## Firebase
-
-> firebaseを使うためにやらないといけないこと
-
-_.config/.env.dev_ と _.config/.env.pred_ にfirebaseの情報を入力してください。
-
-_.config/.env.dev_ は開発環境用の環境変数を設定するファイルです。
-`npm run dev` をした時は、自動的にこちらを使用します。
-
-_.config/.env.pred_ は本番環境用の環境変数を設定するファイルです。
-`npm run generate` をした時は、自動的にこちらを使用します。
-
 
 
 ## Members
