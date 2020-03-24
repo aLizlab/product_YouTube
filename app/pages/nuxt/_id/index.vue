@@ -1,6 +1,6 @@
 <template>
-  <div class="page page-index">
-    <h1>aLiz STUDIO</h1>
+  <div class="page page-nuxt-id">
+    <h1>Nuxt's Section Page</h1>
   </div>
 </template>
 
@@ -14,6 +14,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-  .page-index {
+  .page-nuxt-id {
   }
 </style>

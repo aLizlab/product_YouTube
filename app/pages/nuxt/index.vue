@@ -1,6 +1,6 @@
 <template>
-  <div class="page page-index">
-    <h1>aLiz STUDIO</h1>
+  <div class="page page-nuxt">
+    <h1>Nuxt's Page</h1>
   </div>
 </template>
 
@@ -8,12 +8,12 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  components: {
-  },
 })
 </script>
 
 <style lang="scss" scoped>
-  .page-index {
+  .page-nuxt {
+    width: 100%;
+    padding: 20px;
   }
 </style>
