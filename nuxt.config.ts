@@ -7,7 +7,10 @@ const nuxtConfig: Configuration = {
    ** Headers of the page
    */
   head: {
-    title: 'aLiz Nuxt\'s Template' || process.env.npm_package_name,
+    title: 'aLiz STUDIOs' || process.env.npm_package_name,
+    htmlAttrs: {
+      lang: 'ja',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

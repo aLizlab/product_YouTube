@@ -1,8 +1,8 @@
 {
   "name": "aliz_studio",
   "version": "1.0.0",
-  "description": "My first-class Nuxt.js project",
-  "author": "aLiz LCC",
+  "description": "Study Nuxt",
+  "author": "aLiz",
   "private": true,
   "engines": {
     "node": "12"
