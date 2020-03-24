@@ -15,5 +15,5 @@ export default {
 
 export const basic = () => ({
   components: { HeaderDefault },
-  template: `<HeaderDefault />`,
+  template: '<HeaderDefault />',
 })
