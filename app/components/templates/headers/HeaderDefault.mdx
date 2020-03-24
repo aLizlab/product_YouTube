@@ -1,0 +1,28 @@
+import { Meta, Story, Preview, Props, Source } from '@storybook/addon-docs/blocks'
+
+import HeaderDefault from './HeaderDefault.vue'
+
+<Meta
+  title='templates/headers/HeaderDefault'
+  component={ HeaderDefault }
+/>
+
+# HeaderDefault
+
+PC版のサイトのヘッダーです。
+
+<Source code={`import HeaderDefault from '@/templates/headers/HeaderDefault.vue'`} />
+
+<Preview withSource="open">
+  <Story
+    id="header-default_basic"
+    name="basic"
+  >
+  {{
+    components: { HeaderDefault },
+    template: `<HeaderDefault />`,
+  }}
+  </Story>
+</Preview>
+
+<Props of="." />
