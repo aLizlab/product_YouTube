@@ -1,0 +1,56 @@
+import { Meta, Story, Preview, Props, Source } from '@storybook/addon-docs/blocks'
+
+import SidenavDefault from './SidenavDefault.vue'
+
+<Meta
+  title='templates/sidenavs/SidenavDefault'
+  component={ SidenavDefault }
+/>
+
+# HeaderDefault
+
+PC版のサイトのヘッダーです。
+
+<Source code={`import SidenavDefault from '@/templates/sidenavs/SidenavDefault.vue'`} />
+
+<Preview withSource="open">
+  <Story
+    id="sidenav-default_basic"
+    name="basic"
+  >
+  {{
+    components: { SidenavDefault },
+    template: `<SidenavDefault :pages="pages" />`,
+    data () {
+      return {
+        pages: [
+          {
+            label: 'はじめに',
+            slug: '/nuxt',
+          },
+          {
+            label: 'Vueインスタンス',
+            slug: '/nuxt/instance',
+            sections: [
+              {
+                label: 'Data & Methods',
+                slug: '/nuxt/instance/data-and-methods',
+              },
+              {
+                label: 'ライフサイクル',
+                slug: '/nuxt/instance/lifecycle',
+              },
+            ],
+          },
+          {
+            label: 'Template',
+            slug: '/nuxt/template',
+          },
+        ],
+      }
+    },
+  }}
+  </Story>
+</Preview>
+
+<Props of="." />

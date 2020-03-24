@@ -1,3 +1,4 @@
+// import { configure, addParameters } from '@storybook/vue'
 import { addParameters } from '@storybook/vue'
 
 import Vue from 'vue'
@@ -35,3 +36,5 @@ Vue.component('nuxt-link', {
     },
   },
 })
+
+// configure(require.context('./../app/', true, /\.(story|stories)\.(ts|mdx)$/), module)

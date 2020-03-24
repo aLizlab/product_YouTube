@@ -64,6 +64,9 @@ import { SidenavType } from '@/define/Sidenav'
 
 export default Vue.extend({
   props: {
+    /**
+     * サイドナビで遷移可能なページを設定します。
+     */
     pages: {
       type: Array as PropType<SidenavType[]>,
       required: true,
