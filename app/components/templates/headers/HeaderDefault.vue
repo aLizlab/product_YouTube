@@ -33,6 +33,16 @@
               </p>
             </nuxt-link>
           </li>
+          <li class="page">
+            <a
+              class="link"
+              href="/storybook"
+            >
+              <p class="label">
+                Storybook
+              </p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
