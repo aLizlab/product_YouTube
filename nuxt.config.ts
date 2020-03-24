@@ -7,7 +7,7 @@ const nuxtConfig: Configuration = {
    ** Headers of the page
    */
   head: {
-    title: 'aLiz STUDIOs' || process.env.npm_package_name,
+    title: 'aLiz STUDIO' || process.env.npm_package_name,
     htmlAttrs: {
       lang: 'ja',
     },
