@@ -39,6 +39,16 @@ Vue.jsの公式ガイドを元に、さらにシンプルにして簡単に理�
 - Trello API
 
 
+## DESIGN
+
+> 作成するドキュメントのデザイン
+
+https://www.figma.com/file/9kUkyO13rSZPXtNFkQg285/aLiz-YouTube
+
+白黒をメインに、ダークモードにも対応しています！
+今後SP対応も考えているので、お楽しみにしてください！
+
+
 ## Commands
 
 > 基本的なコマンドの一覧
