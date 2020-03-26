@@ -1,6 +1,6 @@
 <template>
   <div class="chapter chapter-default">
-    <ParagraphDefault
+    <ItemParagraph
       v-for="(chapter, i) in chapters"
       :key="i"
     >
@@ -14,7 +14,7 @@
           v-html="text"
         />
       </template>
-    </ParagraphDefault>
+    </ItemParagraph>
   </div>
 </template>
 
@@ -26,7 +26,7 @@ import { PageNuxtChapterType } from '@/define/models/page/Page'
 
 export default Vue.extend({
   components: {
-    ParagraphDefault: () => import('@/components/molecules/items/ItemParagraph.vue'),
+    ItemParagraph: () => import('@/components/molecules/items/ItemParagraph.vue'),
   },
   props: {
     /**
@@ -51,3 +51,4 @@ export default Vue.extend({
       }
     }
   }
+</style>

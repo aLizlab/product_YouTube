@@ -1,0 +1,49 @@
+import { Meta, Story, Preview, Props, Source } from '@storybook/addon-docs/blocks'
+
+import ItemParagraph from './ItemParagraph.vue'
+
+<Meta
+  title='molecules/items/ItemParagraph'
+  component={ ItemParagraph }
+/>
+
+# ItemParagraph
+
+Nuxtページのコンテンツのチャプターのパラグラフです。
+
+<Source code={`import ItemParagraph from '@/molecules/items/ItemParagraph.vue'`} />
+
+<Preview withSource="open">
+  <Story
+    id="item-paragraph_basic"
+    name="basic"
+  >
+  {{
+    components: { ItemParagraph },
+    template: `<ItemParagraph>
+        <template #title>
+          {{ title }}
+        </template>
+        <template #texts>
+          <p
+            v-for="(text, j) in texts"
+            :key="j"
+            v-html="text"
+          />
+        </template>
+      </ItemParagraph>`,
+    data () {
+      return {
+        title: 'Vue.jsとは？',
+        texts: [
+          `HTML/CSS/JavaScriptのフレームワークの一つ。表示をする部分に焦点を当てたフレームワークのため、変化がわかりやすくいのが特徴。
+
+          日本では他のフレームワーク（Rea.js, Angular.js, Svelte.jsなど）に比べて人気があり、日本語のドキュメントも充実しています。そのため初心者にもおすすめ。`,
+        ],
+      }
+    },
+  }}
+  </Story>
+</Preview>
+
+<Props of="." />
