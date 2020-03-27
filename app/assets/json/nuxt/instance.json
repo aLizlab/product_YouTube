@@ -1,0 +1,31 @@
+{
+  "top": {
+    "title": "Vueインスタンス",
+    "intro": "Nuxt.jsの中でDOMに関係するものの集まりの導入です。DOMは、HTML/CSSとそれに関するJavaScriptと思っていてください。",
+    "chapters": [
+      {
+        "title": "表示"
+      },
+      {
+        "title": "コード",
+        "codes": [
+          {
+            "fileName": "@/components/samples/instance/InstanceSample1.vue",
+            "code": "<template>\\n    <p class=\"instance instance-sample1\">\\n        {{ text }}\\n    </p>\\n</template>\\n\\n<script lang=”ts”>\\n"
+          },
+          {
+            "fileName": "**.vue",
+            "code": "aaaa"
+          }
+        ]
+      },
+      {
+        "title": "解説と流れ",
+        "texts": [
+          "Nuxtの世界にお邪魔する前にきちんと挨拶をしましょう！\\n「Hello Nuxt’s World!!!」",
+          "1. 表示したいページを用意する。上でいうsample.vueです。\\n2. InstanceSample1という名前のコンポーネントを作成する。\\n3. ページで作成したコンポーネントを読み込む\\n4. textという変数に、Hello Nuxt’s World!!!という文字列を代入する\\n5. textをpタグで表示する\\n6. 完成！"
+        ]
+      }
+    ]
+  }
+}

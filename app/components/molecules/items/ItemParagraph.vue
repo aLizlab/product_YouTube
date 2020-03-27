@@ -10,6 +10,10 @@
       <!-- @slot チャプターのテキストを設定します。 -->
       <slot name="texts" />
     </div>
+    <div class="codes">
+      <!-- @slot チャプターのコードを設定します。 -->
+      <slot name="codes" />
+    </div>
   </div>
 </template>
 
@@ -33,15 +37,21 @@ export default Vue.extend({})
       font-size: 1.714rem;
     }
 
-    > .texts {
+    > .texts,
+    > .codes {
       transform: translateX(-10px);
       display: flex;
       width: calc(100% + 20px);
-      white-space: pre-line;
 
       > * {
+        flex: 1;
+        max-width: calc(100% - 20px);
         margin: 0 10px;
       }
+    }
+
+    > .texts {
+      white-space: pre-line;
     }
   }
 </style>

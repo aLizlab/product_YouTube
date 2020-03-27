@@ -14,6 +14,22 @@
           v-html="text"
         />
       </template>
+      <template #codes>
+        <CodeDefault
+          v-for="(code, j) in chapter.codes"
+          :key="j"
+          :class="{ 'two-code': chapter.codes.length === 2 }"
+        >
+          <template #fileName>
+            {{ code.fileName }}
+          </template>
+          <template #code>
+            <code>
+{{ code.code }} <!-- eslint-disable-line vue/html-indent -->
+            </code>
+          </template>
+        </CodeDefault>
+      </template>
     </ItemParagraph>
   </div>
 </template>
@@ -27,6 +43,7 @@ import { PageNuxtChapterType } from '@/define/models/page/Page'
 export default Vue.extend({
   components: {
     ItemParagraph: () => import('@/components/molecules/items/ItemParagraph.vue'),
+    CodeDefault: () => import('@/components/molecules/items/ItemCode.vue'),
   },
   props: {
     /**
@@ -48,6 +65,10 @@ export default Vue.extend({
 
       &:first-child {
         margin-top: 0;
+      }
+
+      .two-code {
+        max-width: calc(50% - 20px) !important;
       }
     }
   }
